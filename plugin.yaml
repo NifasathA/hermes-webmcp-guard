@@ -1,0 +1,16 @@
+name: hermes-webmcp-guard
+version: "0.1.0"
+description: Permission-aware, ephemeral WebMCP capabilities for Hermes Agent
+requires_hermes: ">=0.23.1"
+provides_tools:
+  - webmcp_connect
+  - webmcp_list_tools
+  - webmcp_execute
+  - webmcp_disconnect
+provides_hooks:
+  - pre_tool_call
+  - on_session_end
+  - on_session_reset
+provides_middleware:
+  - tool_execution
+

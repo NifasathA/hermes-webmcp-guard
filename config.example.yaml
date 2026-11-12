@@ -1,0 +1,11 @@
+# Merge under plugins.entries.hermes-webmcp-guard.settings in ~/.hermes/config.yaml.
+endpoints:
+  local-demo:
+    # A page target from http://127.0.0.1:9222/json/list, or a browser-level URL.
+    websocket_url: ws://127.0.0.1:9222/devtools/page/REPLACE_ME
+    allowed_origins:
+      - http://127.0.0.1:8765
+      - https://googlechromelabs.github.io
+    connect_timeout_seconds: 10
+    execution_timeout_seconds: 20
+    max_response_bytes: 262144
